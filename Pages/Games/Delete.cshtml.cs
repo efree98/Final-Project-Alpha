@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using FinalProject.Models;
 
-namespace FinalProject.Pages.Games
+namespace Final_Project_Alpha.Pages.Games
 {
     public class DeleteModel : PageModel
     {
@@ -21,7 +21,7 @@ namespace FinalProject.Pages.Games
         [BindProperty]
         public Game Game { get; set; }
 
-       /* public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
@@ -35,9 +35,9 @@ namespace FinalProject.Pages.Games
                 return NotFound();
             }
             return Page();
-        } */
+        } 
 
-        /*public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)
             {
@@ -56,5 +56,5 @@ namespace FinalProject.Pages.Games
 
             return RedirectToPage("./Index");
         }
-    */}
+    }
 }

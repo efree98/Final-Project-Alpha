@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Lab11.Pages.Games
+namespace Final_Project_Alpha.Pages.Games
 {
     public class DeleteCourseModel : PageModel
     {
@@ -42,7 +42,7 @@ namespace Lab11.Pages.Games
             return Page();
         }
 
-        /*public IActionResult OnPost()
+        public IActionResult OnPost()
         {
             _logger.LogInformation($"DeleteCourse OnPost() called. CourseId = '{CourseId}'.");
 
@@ -51,7 +51,7 @@ namespace Lab11.Pages.Games
                 return NotFound();
             }
             // Find the course in the database
-            Publisher c = _context.Publisher.Find(PublisherId);
+            Game c = _context.Publisher.Find(PublisherId);
 
             if (c != null)
             {
@@ -60,6 +60,6 @@ namespace Lab11.Pages.Games
             }
 
             return RedirectToPage("./Index");
-        }*/
+        }
     }
 }

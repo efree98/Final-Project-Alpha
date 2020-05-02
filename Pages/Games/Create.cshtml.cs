@@ -28,17 +28,17 @@ namespace FinalProject.Pages.Games
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.
-    //    public async Task<IActionResult> OnPostAsync()
-    //    {
-    //        if (!ModelState.IsValid)
-    //        {
-    //            return Page();
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
             }
 
-    //        _context.GameContext.Add(Game);
-    //        await _context.SaveChangesAsync();
+            _context.Game.Add(Game);
+         await _context.SaveChangesAsync();
 
-         //   return RedirectToPage("./Index");
-       // }
-    //}
+            return RedirectToPage("./Index");
+        }
+    }
 }

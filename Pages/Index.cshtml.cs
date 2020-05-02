@@ -23,6 +23,8 @@ namespace Final_Project_Alpha.Pages
             _context = context;
             _logger = logger;
         }
+
+//This below causes an SQL error, need to figure out
         public void OnGet()
         {
             Games = _context.Game.ToList();

@@ -72,4 +72,8 @@ C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\stati
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Final-Project-Alpha.dll
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Final-Project-Alpha.pdb
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Games\AddGame.cshtml.g.cs
-C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\(Backup)Games\Create.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Final-Project-Alpha.csproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Games\Create.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Games\Delete.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Games\DeleteCourse.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Final-Project-Alpha.genruntimeconfig.cache

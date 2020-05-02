@@ -1,5 +1,5 @@
 @page
-@model Lab11.Pages.Games.DeleteModel
+@model Final_Project_Alpha.Pages.Games.DeleteModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -13,21 +13,21 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.GamesList.GameName)
+            @Html.DisplayNameFor(model => model.Game.GameTitle)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.GamesList.GameName)
+            @Html.DisplayFor(model => model.Game.GameTitle)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.GamesList.Rating)
+            @Html.DisplayNameFor(model => model.Game.Rating)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.GamesList.Rating)
+            @Html.DisplayFor(model => model.Game.Rating)
         </dd>
     </dl>
     
     <form method="post">
-        <input type="hidden" asp-for="GamesList.GameName" />
+        <input type="hidden" asp-for="Game.GameTitle" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-page="./Index">Back to List</a>
     </form>
