@@ -1,0 +1,48 @@
+@page
+@model Lab11.Pages.Games.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Games</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Games.GameName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Games.GameName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Games.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Games.Rating)
+        </dd>
+        <!-- Round 3: Loop through each course and display it -->
+        @foreach (var c in Model.Games.Publisher)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Games.Publisher)
+            </dt>
+            <dd class="col-sm-1">
+                @Html.DisplayFor(model => c.Publishing_Company)
+            </dd>
+            <!-- Form with button to delete each course -->
+            <dt class="col-sm-9">
+                <form method="post">
+                    <input type="hidden" asp-for="CourseIdToDelete" value="@c.PublisherId" />
+                    <input type="submit" asp-page-handler="DeleteCourse" asp-route-id="@Model.Games.GamesId" value="Delete Course" class="btn btn-danger btn-sm" />
+                </form>
+            </dt>
+        }
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.GamesList.GamesId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

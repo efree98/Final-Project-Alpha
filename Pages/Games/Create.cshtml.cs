@@ -26,6 +26,8 @@ namespace FinalProject.Pages.Games
         [BindProperty]
         public Game Game { get; set; }
 
+        //NEED TO FIX
+
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.
     //    public async Task<IActionResult> OnPostAsync()

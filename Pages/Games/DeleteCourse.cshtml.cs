@@ -42,6 +42,8 @@ namespace Lab11.Pages.Games
             return Page();
         }
 
+
+        //NEED TO FIX
         /*public IActionResult OnPost()
         {
             _logger.LogInformation($"DeleteCourse OnPost() called. CourseId = '{CourseId}'.");

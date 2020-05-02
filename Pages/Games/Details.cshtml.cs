@@ -9,20 +9,20 @@ using FinalProject.Models;
 
 namespace FinalProject.Pages.Games
 {
-    public class DeleteModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly FinalProject.Models.Game _context;
 
-        public DeleteModel(FinalProject.Models.Game context)
+        public DetailsModel(FinalProject.Models.Game context)
         {
             _context = context;
         }
 
-        [BindProperty]
         public Game Game { get; set; }
+        [BindProperty]
+        public int CourseIdToDelete {get; set;}
 
         //NEED TO FIX
-
        /* public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -30,33 +30,16 @@ namespace FinalProject.Pages.Games
                 return NotFound();
             }
 
-            Game = await _context.Game.FirstOrDefaultAsync(m => m.GamesId == id);
+            // Round 3: Add .Include() to bring in courses
+            Game = await _context.Game.Include(p => p.Publisher).FirstOrDefaultAsync(m => m.GameId == id);
 
             if (Game == null)
             {
                 return NotFound();
             }
             return Page();
-        } */
+        }*/
 
-        /*public async Task<IActionResult> OnPostAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            Game = await _context.Games.FindAsync(id);
-
-            if (Game != null)
-            {
-                _context.Games.Remove(Game);
-                await _context.SaveChangesAsync();
-            }  
-
-            
-
-            return RedirectToPage("./Index");
-        }
-    */}
+        
+    }
 }

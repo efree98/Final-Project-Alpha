@@ -28,7 +28,7 @@ namespace FinalProject.Pages
 
         public void OnGet()
         {
-            GameDropDown = new SelectList(_context.GameConsole.ToList(), "GameId", "GameTitle");
+            GameDropDown = new SelectList(_context.GameTitle.ToList(), "GameId", "GameTitle");
         }
 
         public IActionResult OnPost()
@@ -39,6 +39,8 @@ namespace FinalProject.Pages
             }
 
             _context.Publisher.Add(Publisher);
+
+            //NEED TO FIX/FIGURE OUT
            // _context.SaveChanges();
 
             return RedirectToPage("./Index");
