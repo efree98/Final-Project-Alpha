@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Lab11.Models;
+using FinalProject.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
@@ -15,11 +15,11 @@ namespace Lab11.Pages.Games
 {
     public class DeleteCourseModel : PageModel
     {
-        private readonly GamesContext _context; // Database context
+        private readonly Game _context; // Database context
         private readonly ILogger _logger; // Logging object
 
         // Model Constructor. Used to bring in _context and logger from Dependency Injection
-        public DeleteCourseModel(GamesContext context, ILogger<DeleteCourseModel> logger)
+        public DeleteCourseModel(Game context, ILogger<DeleteCourseModel> logger)
         {
             _context = context;
             _logger = logger;
@@ -42,7 +42,7 @@ namespace Lab11.Pages.Games
             return Page();
         }
 
-        public IActionResult OnPost()
+        /*public IActionResult OnPost()
         {
             _logger.LogInformation($"DeleteCourse OnPost() called. CourseId = '{CourseId}'.");
 
@@ -60,6 +60,6 @@ namespace Lab11.Pages.Games
             }
 
             return RedirectToPage("./Index");
-        }
+        }*/
     }
 }

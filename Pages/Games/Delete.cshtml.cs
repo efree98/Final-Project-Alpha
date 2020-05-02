@@ -5,54 +5,56 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Lab11.Models;
+using FinalProject.Models;
 
-namespace Lab11.Pages.Games
+namespace FinalProject.Pages.Games
 {
     public class DeleteModel : PageModel
     {
-        private readonly Lab11.Models.GamesContext _context;
+        private readonly FinalProject.Models.Game _context;
 
-        public DeleteModel(Lab11.Models.GamesContext context)
+        public DeleteModel(FinalProject.Models.Game context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public GamesList GamesList { get; set; }
+        public Game Game { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+       /* public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            GamesList = await _context.GamesList.FirstOrDefaultAsync(m => m.GamesId == id);
+            Game = await _context.Game.FirstOrDefaultAsync(m => m.GamesId == id);
 
-            if (GamesList == null)
+            if (Game == null)
             {
                 return NotFound();
             }
             return Page();
-        }
+        } */
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        /*public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            GamesList = await _context.Games.FindAsync(id);
+            Game = await _context.Games.FindAsync(id);
 
-            if (GamesList != null)
+            if (Game != null)
             {
-                _context.Game.Remove(Game);
+                _context.Games.Remove(Game);
                 await _context.SaveChangesAsync();
-            }
+            }  
+
+            
 
             return RedirectToPage("./Index");
         }
-    }
+    */}
 }
