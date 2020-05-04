@@ -20556,11 +20556,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\AddGame.cshtml",
-      "TargetPath": "Pages\\Games\\AddGame.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\Create.cshtml",
       "TargetPath": "Pages\\Games\\Create.cshtml",
       "FileKind": "mvc"
@@ -20568,6 +20563,11 @@
     {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\AddPublisher.cshtml",
+      "TargetPath": "Pages\\Games\\AddPublisher.cshtml",
       "FileKind": "mvc"
     }
   ],
