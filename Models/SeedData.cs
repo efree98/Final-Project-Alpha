@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
+using FinalProject.Models;
+
 namespace FinalProject.Models
 {
     public static class SeedData
@@ -18,7 +20,7 @@ using System.Linq;
                 }
                 
                 context.Game.AddRange(
-                    new Game 
+                    new Game
                     {
                         GameTitle = "The Legend of Zelda: Breath of the Wild",
 
