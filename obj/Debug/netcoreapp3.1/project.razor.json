@@ -20521,11 +20521,6 @@
   "RootNamespace": "Final_Project_Alpha",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\DeleteCourse.cshtml",
-      "TargetPath": "Pages\\Games\\DeleteCourse.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"

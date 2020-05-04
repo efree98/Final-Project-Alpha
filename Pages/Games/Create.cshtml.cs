@@ -11,9 +11,9 @@ namespace FinalProject.Pages.Games
 {
     public class CreateModel : PageModel
     {
-        private readonly FinalProject.Models.Game _context;
+        private readonly FinalProject.Models.GameDbContext _context;
 
-        public CreateModel(FinalProject.Models.Game context)
+        public CreateModel(FinalProject.Models.GameDbContext context)
         {
             _context = context;
         }

@@ -14,12 +14,12 @@ namespace Final_Project_Alpha.Pages.Games
     public class AddGameModel : PageModel
     {
         private readonly ILogger<AddGameModel> _logger;
-        private readonly Game _context; // Game Database context
+        private readonly GameDbContext _context; // Game Database context
         [BindProperty]
         public Publisher Publisher {get; set;}
         public SelectList GameDropDown {get; set;}
 
-        public AddGameModel(Game context, ILogger<AddGameModel> logger)
+        public AddGameModel(GameDbContext context, ILogger<AddGameModel> logger)
         {
             // Bring in Database context and logger using dependency injection
             _context = context;
@@ -28,7 +28,7 @@ namespace Final_Project_Alpha.Pages.Games
 
         public void OnGet()
         {
-            GameDropDown = new SelectList(_context.GameConsole.ToList(), "GameId", "GameTitle");
+            GameDropDown = new SelectList(_context.Game.ToList(), "GameId", "GameTitle");
         }
 
         public IActionResult OnPost()
@@ -37,8 +37,8 @@ namespace Final_Project_Alpha.Pages.Games
             {
                 return Page();
             }
-            //SaveChanges not wanting to work
-            _context.Publisher.Add(Publisher);
+            
+            _context.Game.Add(Game);
             _context.SaveChanges();
 
             return RedirectToPage("./Index");

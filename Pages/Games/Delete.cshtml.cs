@@ -11,9 +11,9 @@ namespace Final_Project_Alpha.Pages.Games
 {
     public class DeleteModel : PageModel
     {
-        private readonly FinalProject.Models.Game _context;
+        private readonly FinalProject.Models.GameDbContext _context;
 
-        public DeleteModel(FinalProject.Models.Game context)
+        public DeleteModel(FinalProject.Models.GameDbContext context)
         {
             _context = context;
         }
@@ -28,7 +28,7 @@ namespace Final_Project_Alpha.Pages.Games
                 return NotFound();
             }
 
-            Game = await _context.Game.FirstOrDefaultAsync(m => m.GamesId == id);
+            Game = await _context.Game.FirstOrDefaultAsync(m => m.GameId == id);
 
             if (Game == null)
             {
@@ -44,11 +44,11 @@ namespace Final_Project_Alpha.Pages.Games
                 return NotFound();
             }
 
-            Game = await _context.Games.FindAsync(id);
+            Game = await _context.Game.FindAsync(id);
 
             if (Game != null)
             {
-                _context.Games.Remove(Game);
+                _context.Game.Remove(Game);
                 await _context.SaveChangesAsync();
             }  
 
