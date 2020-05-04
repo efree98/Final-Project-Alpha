@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 {
 	public class BoardGameDbContext : DbContext
 	{
-		public BoardGameDbContext (DbContextOptions<GameDbContext> options)
+		public BoardGameDbContext (DbContextOptions<BoardGameDbContext> options)
 			: base(options)
 		{
 		}
-		public DbSet<Game> Game {get; set;}
+		public DbSet<BoardGame> BoardGame {get; set;}
 	}
 }

@@ -20536,6 +20536,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\BoardGames\\AddPublisher.cshtml",
+      "TargetPath": "Pages\\BoardGames\\AddPublisher.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
@@ -20566,8 +20571,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\BoardGames\\Create.cshtml",
+      "TargetPath": "Pages\\BoardGames\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\AddPublisher.cshtml",
       "TargetPath": "Pages\\Games\\AddPublisher.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\BoardGames\\Delete.cshtml",
+      "TargetPath": "Pages\\BoardGames\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],
