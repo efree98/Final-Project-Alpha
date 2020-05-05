@@ -1,0 +1,36 @@
+@page
+@model Final_Project_Alpha.Pages.Publishers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher[0].Publishing_Company)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Publisher) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publishing_Company)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PublisherId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PublisherId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PublisherId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
