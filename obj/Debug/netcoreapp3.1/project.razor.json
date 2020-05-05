@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Games\\ShowGames.cshtml",
+      "TargetPath": "Pages\\Games\\ShowGames.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Documents\\GitHub\\Final-Project-Alpha\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

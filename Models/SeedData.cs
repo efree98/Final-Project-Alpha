@@ -49,11 +49,85 @@ using FinalProject.Models;
                         Price = "45",
 
                         GameConsole = "PlayStation4"
+                    },
+                        new Game 
+                    {
+                        GameTitle = "Super Bit Defender XL",
+
+                        Rating = "E",
+
+                        Price = "0.99",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+
+                        new Game
+                    {
+                        GameTitle = "Pokemon Sheild",
+
+                        Rating = "E",
+
+                        Price = "60",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+
+                            new Game
+                    {
+                        GameTitle = "Pokemon Red",
+
+                        Rating = "E",
+
+                        Price = "40",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+                        new Game
+                    {
+                        GameTitle = "Metroid Prime",
+
+                        Rating = "T",
+
+                        Price = "60",
+
+                        GameConsole = "Nintendo Gamecube"
                     }
                 );
                 
                 context.SaveChanges();
             }
-        }
+
+             using (var context = new BoardGameDbContext(
+                serviceProvider.GetRequiredService<DbContextOptions<BoardGameDbContext>>()))
+            {
+                // Look for any blogs.
+                if (context.BoardGame.Any())
+                {
+                    return; // DB has been seeded
+                }
+                
+                context.BoardGame.AddRange(
+                    new BoardGame
+                    {
+                        BoardGameTitle = "Risk",
+                        Price = "0",    
+                    },
+
+                       new BoardGame 
+                    {
+                        BoardGameTitle = "Othello",
+
+                        Price = "20",
+                    },
+                           new BoardGame 
+                    {
+                         BoardGameTitle = "Senet",
+                        Price = "25"
+                    }
+                );
+                
+                context.SaveChanges();
+            }
+        }
     }
 }
