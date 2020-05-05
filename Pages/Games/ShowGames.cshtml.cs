@@ -31,4 +31,5 @@ Games = _context.Game.ToList();
 
 }
 }
+
 }

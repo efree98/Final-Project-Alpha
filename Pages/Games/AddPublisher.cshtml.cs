@@ -11,15 +11,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Final_Project_Alpha.Pages.Games
 {
-    public class AddGameModel : PageModel
+    public class AddPublisherModel : PageModel
     {
-        private readonly ILogger<AddGameModel> _logger;
+        private readonly ILogger<AddPublisherModel> _logger;
         private readonly GameDbContext _context; // Game Database context
         [BindProperty]
         public Publisher Publisher {get; set;}
         public SelectList GameDropDown {get; set;}
 
-        public AddGameModel(GameDbContext context, ILogger<AddGameModel> logger)
+        public AddPublisherModel(GameDbContext context, ILogger<AddPublisherModel> logger)
         {
             // Bring in Database context and logger using dependency injection
             _context = context;

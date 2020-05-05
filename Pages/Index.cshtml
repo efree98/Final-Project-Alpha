@@ -9,15 +9,3 @@
     <p>Please make a selection:</p>
 </div>
 
-public async Task<IActionResult> Index(string searchString)
-{
-    var Games = from m in _context.Games
-                 select m;
-
-    if (!String.IsNullOrEmpty(searchString))
-    {
-        Games = Games.Where(s => s.Title.Contains(searchString));
-    }
-
-    return View(await movies.ToListAsync());
-}

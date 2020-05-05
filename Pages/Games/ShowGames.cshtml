@@ -3,10 +3,38 @@
 @{
     ViewData["Title"] = "Game Page";
 }
-<h3>Your Games</h3>
+<h2><b>Your Games</b></h2>
 <hr />
 <p>List of Games:</p>
 @foreach (var Game in Model.Games)
 {
-    <p>@Html.DisplayFor(modelItem => Game.GameTitle, Game.GameConsole, Game.Publisher)</p>
+      <div id="contentBox" style="margin:0px auto; width:auto">
+
+    <div id="column1" style="float:left; margin:0; width:30%; rows;">
+      @Html.DisplayFor(modelItem => Game.GameTitle)
+    </div>
+
+
+
+    <div id="column2" style="float:left; margin:0;width:10%;">
+            @Html.DisplayNameFor(model => Game.Price)
+    </div>
+
+
+
+    <div id="column3" style="float:left; margin:0;width:10%">
+            @Html.DisplayFor(model => Game.Rating)
+    </div>
+
+
+	
+     <div id="column4" style="float:left; margin:0;width:25%">
+     		       @Html.DisplayFor(model => Game.GameConsole)
+    </div>
+
+
+
+
+
+</div>
 }

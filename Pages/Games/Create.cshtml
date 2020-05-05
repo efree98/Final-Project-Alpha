@@ -7,7 +7,7 @@
 
 <h1>Create</h1>
 
-<h4>Game</h4>
+<h2>Game</h2>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -23,8 +23,23 @@
                 <input asp-for="Game.Rating" class="form-control" />
                 <span asp-validation-for="Game.Rating" class="text-danger"></span>
             </div>
+             <div class="form-group">
+                <label asp-for="Game.Price" class="control-label"></label>
+                <input asp-for="Game.Price" class="form-control" />
+                <span asp-validation-for="Game.Price" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Game.GameConsole" class="control-label"></label>
+                <input asp-for="Game.GameConsole" class="form-control" />
+                <span asp-validation-for="Game.GameConsole" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Game.Publisher" class="control-label"></label>
+                <input asp-for="Game.Publisher" class="form-control" />
+                <span asp-validation-for="Game.Publisher" class="text-danger"></span>
+            </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Add Game" class="btn btn-primary" />
             </div>
         </form>
     </div>
