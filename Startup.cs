@@ -29,6 +29,9 @@ namespace Final_Project_Alpha
  
                services.AddDbContext<GameDbContext>(options =>
 	options.UseSqlite(Configuration.GetConnectionString("GameContext")));
+
+            services.AddDbContext<GameContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("GameContext")));
  
         }
 

@@ -19,60 +19,16 @@ namespace Final_Project_Alpha.Pages.Games
         }
 
         [BindProperty]
-        public Game Game { get; set; }
+        public List<Game> Games { get; set; }
 
 
        
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+       public void OnGet()
 
-            Game = await _context.Game.FirstOrDefaultAsync(m => m.GameId == id);
-
-            if (Game == null)
-            {
-                return NotFound();
-            }
-            return Page();
-        } 
-
-        public async Task<IActionResult> OnPostAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            Game = await _context.Game.FindAsync(id);
-
-            if (Game != null)
-            {
-                _context.Game.Remove(Game);
-                await _context.SaveChangesAsync();
-            }  
-
-            
-
-            return RedirectToPage("./Index");
-        }
-    }
-     public class GameList : IEnumerable<Models.Game>
 {
-    private List<GameList> Games;
 
-    
+Games = _context.Game.ToList();
 
-    public IEnumerator<GameList> GetEnumerator()
-    {
-        return GameList.GetEnumerator();
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GameList.GetEnumerator();
-    }
+}
 }
 }

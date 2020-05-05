@@ -84,6 +84,26 @@ using FinalProject.Models;
                     },
                         new Game
                     {
+                        GameTitle = "Defunct",
+
+                        Rating = "E",
+
+                        Price = "0.29",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+                        new Game
+                        {
+                        GameTitle = "Minecraft",
+
+                        Rating = "E",
+
+                        Price = "30",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+ new Game
+                        {
                         GameTitle = "Metroid Prime",
 
                         Rating = "T",
@@ -91,6 +111,16 @@ using FinalProject.Models;
                         Price = "60",
 
                         GameConsole = "Nintendo Gamecube"
+                    },
+ new Game
+                        {
+                        GameTitle = "Halo Combat Evolved",
+
+                        Rating = "M",
+
+                        Price = "60",
+
+                        GameConsole = "Xbox"
                     }
                 );
                 
@@ -123,6 +153,47 @@ using FinalProject.Models;
                     {
                          BoardGameTitle = "Senet",
                         Price = "25"
+                    },
+                          new BoardGame
+                    {
+                        BoardGameTitle = "Chess",
+                        Price = "100",    
+                    },
+
+                       new BoardGame 
+                    {
+                        BoardGameTitle = "Monopoly",
+
+                        Price = "20",
+                    },
+                          new BoardGame
+                    {
+                        BoardGameTitle = "Pandemic",
+                        Price = "10",    
+                    },
+
+                       new BoardGame 
+                    {
+                        BoardGameTitle = "Life",
+
+                        Price = "3",
+                    },
+                          new BoardGame
+                    {
+                        BoardGameTitle = "Ticket to Ride",
+                        Price = "0",    
+                    },
+
+                       new BoardGame 
+                    {
+                        BoardGameTitle = "Clue",
+
+                        Price = "20",
+                    },
+                          new BoardGame
+                    {
+                        BoardGameTitle = "Stratego",
+                        Price = "15",    
                     }
                 );
                 

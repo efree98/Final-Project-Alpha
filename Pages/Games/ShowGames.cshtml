@@ -1,12 +1,12 @@
 @page
 @model Final_Project_Alpha.Pages.Games.ShowGameModel
 @{
-    ViewData["Title"] = "Blog Page";
+    ViewData["Title"] = "Game Page";
 }
-<h3>DB Page</h3>
+<h3>Your Games</h3>
 <hr />
 <p>List of Games:</p>
-@foreach (var GameTitle in Model.Game)
+@foreach (var Game in Model.Games)
 {
-    <p>@Html.DisplayFor(modelItem => b.Title)</p>
+    <p>@Html.DisplayFor(modelItem => Model.Games)</p>
 }
