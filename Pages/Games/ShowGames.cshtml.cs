@@ -21,6 +21,8 @@ namespace Final_Project_Alpha.Pages.Games
         [BindProperty]
         public Game Game { get; set; }
 
+
+       
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -57,4 +59,20 @@ namespace Final_Project_Alpha.Pages.Games
             return RedirectToPage("./Index");
         }
     }
+     public class GameList : IEnumerable<Models.Game>
+{
+    private List<GameList> Games;
+
+    
+
+    public IEnumerator<GameList> GetEnumerator()
+    {
+        return GameList.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GameList.GetEnumerator();
+    }
+}
 }
