@@ -10,14 +10,14 @@
 {
       <div id="contentBox" style="margin:0px auto; width:auto">
 
-    <div id="column1" style="float:left; margin:0; width:30%; rows;">
+    <div id="column1" style="float:left; margin:0; width:30%;">
       @Html.DisplayFor(modelItem => Game.GameTitle)
     </div>
 
 
 
     <div id="column2" style="float:left; margin:0;width:10%;">
-            @Html.DisplayNameFor(model => Game.Price)
+           $ @Html.DisplayFor(model => Game.Price)
     </div>
 
 
