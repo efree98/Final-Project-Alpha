@@ -80,7 +80,7 @@ using FinalProject.Models;
 
                         Price = "40",
 
-                        GameConsole = "Nintendo Switch"
+                        GameConsole = "Nintendo Gameboy"
                     },
                         new Game
                     {
@@ -102,7 +102,7 @@ using FinalProject.Models;
 
                         GameConsole = "Nintendo Switch"
                     },
- new Game
+                        new Game
                         {
                         GameTitle = "Metroid Prime",
 
@@ -112,7 +112,7 @@ using FinalProject.Models;
 
                         GameConsole = "Nintendo Gamecube"
                     },
- new Game
+                        new Game
                         {
                         GameTitle = "Halo Combat Evolved",
 
@@ -121,6 +121,58 @@ using FinalProject.Models;
                         Price = "60",
 
                         GameConsole = "Xbox"
+                    },
+                           new Game 
+                    {
+                        GameTitle = "Tetris 99",
+
+                        Rating = "E",
+
+                        Price = "10",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+                           new Game 
+                    {
+                        GameTitle = "Stardew Valley",
+
+                        Rating = "T",
+
+                        Price = "45",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+                        new Game 
+                    {
+                        GameTitle = "Super Smash Bros Ultimate",
+
+                        Rating = "E",
+
+                        Price = "0.99",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+
+                        new Game
+                    {
+                        GameTitle = "Doom (2016)",
+
+                        Rating = "E",
+
+                        Price = "20",
+
+                        GameConsole = "Nintendo Switch"
+                    },
+
+                            new Game
+                    {
+                        GameTitle = "Super Mario Maker 2",
+
+                        Rating = "E",
+
+                        Price = "40",
+
+                        GameConsole = "Nintendo Switch"
                     }
                 );
                 

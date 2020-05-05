@@ -167,3 +167,8 @@ C:\Users\acer\Documents\GitHub\Final-Project-Alpha\bin\Debug\netcoreapp3.1\runti
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\acer\Documents\GitHub\Final-Project-Alpha\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Publishers\Create.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Publishers\Delete.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Publishers\Details.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Publishers\Edit.cshtml.g.cs
+C:\Users\acer\Documents\GitHub\Final-Project-Alpha\obj\Debug\netcoreapp3.1\Razor\Pages\Publishers\Index.cshtml.g.cs

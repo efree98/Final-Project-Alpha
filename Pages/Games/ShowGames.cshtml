@@ -8,5 +8,5 @@
 <p>List of Games:</p>
 @foreach (var Game in Model.Games)
 {
-    <p>@Html.DisplayFor(modelItem => Model.Games)</p>
+    <p>@Html.DisplayFor(modelItem => Game.GameTitle, Game.GameConsole, Game.Publisher)</p>
 }
