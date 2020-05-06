@@ -11,8 +11,15 @@ using System.Collections.Generic;
 
         public String Price {get; set;}
 
-        
-
         public List<Publisher> BoardGamePublisher {get; set;}
+
+        /* 
+        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/BoardGames/Create">Add Board Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/BoardGames/Create">Delete Board Game</a>
+                        </li>
+        */
     }
 }

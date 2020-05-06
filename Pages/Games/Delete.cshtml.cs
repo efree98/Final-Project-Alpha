@@ -58,3 +58,10 @@ namespace Final_Project_Alpha.Pages.Games
         }
     }
 }
+
+
+/*
+<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Games/Delete">Delete Game</a>
+                        </li>
+                        */

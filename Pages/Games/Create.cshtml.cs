@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using FinalProject.Models;
+using FinalProject.Pages;
 
 namespace FinalProject.Pages.Games
 {
@@ -38,7 +39,7 @@ namespace FinalProject.Pages.Games
             _context.Game.Add(Game);
          await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Games/Create");
         }
     }
 }

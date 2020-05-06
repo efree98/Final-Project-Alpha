@@ -23,15 +23,19 @@ namespace Final_Project_Alpha.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("GameConsole")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GameTitle")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Price")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Rating")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("GameId");
